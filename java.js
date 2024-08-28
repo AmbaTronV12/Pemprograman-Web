@@ -17,3 +17,11 @@ function toggleTable(button) {
         button.textContent = "Show Table";
     }
 }
+
+document.getElementById('openPopup').onclick = function() {
+    document.getElementById('popup').style.display = 'block';
+}
+
+document.getElementById('closePopup').onclick = function() {
+    document.getElementById('popup').style.display = 'none';
+}

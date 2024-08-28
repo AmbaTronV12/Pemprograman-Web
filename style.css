@@ -9,14 +9,15 @@ body{
     display: flex; 
     flex-direction: column; 
     align-items: center;
-    /* background-image: url(); */
+    background-image: url(background.png);
+    background-size: cover;
 }
 a.button {
     padding: 1px 6px;
     border: 1px outset buttonborder;
-    border-radius: 3px;
-    color: buttontext;
-    background-color: buttonface;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
     text-decoration: none;
 }
 img{
@@ -36,6 +37,7 @@ img{
     width: 250px;
     align-items: center;
     flex-direction: column;
+    background-color: #2A2A2A;
 }
 .item img {
     width: 200px;
@@ -45,15 +47,49 @@ img{
 .item table {
     width: 100%;
     margin-top: 10px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-collapse: collapse;
     display: none; 
+    color: white;
 }
 .item th, .item td {
-    border: 1px solid black;
+    border: 1px solid white;
 }
 .item button {
     margin-top: 5px;
     padding: 5px 10px;
     font-size: 14px;
+    border-radius: 10px;
+}
+.button {
+    border-radius: 10px;
+}
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 50%; /* Center the pop-up */
+    top: 50%; /* Center the pop-up */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    border: 1px solid #ccc;
+    background-color: #2A2A2A;
+    padding: 20px;
+    z-index: 1000; /*Sit on top */
+}
+.popup p {
+    color: white;
+    font-size: 18px;
+}
+
+.popup img{
+    width: 30px;
+    height: 30px;
+}
+
+.close {
+    color: white; /* Change text color to white */
+    font-size: 24px; /* Adjust font size as needed */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    position: absolute; /* Position it correctly */
+    top: 10px; /* Adjust top position */
+    right: 20px; /* Adjust right position */
 }

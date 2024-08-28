@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Table data diri</h1>
+    <h1 style="color: white;">Table data diri</h1>
     <div class="row" id="imageRow">
         <div class="item">
         <img src="foto.jpeg" alt="foto">
@@ -44,6 +44,7 @@
                     <td>Renang,Bermain game</td>
                 </tr>
             </table>
+            <a href="https://github.com/AmbaTronV12" class="button" target="_blank">Github</a>
         </div>
         <div class="item">
             <img src="dicty.jpeg" alt="foto1">
@@ -79,9 +80,10 @@
                         <td>Bermain Gitar</td>
                     </tr>
                 </table>
+                <a href="https://github.com/Feral179" class="button" target="_blank">Github</a>
             </div>
             <div class="item">
-                <img src="image copy.png" alt="foto2">
+                <img src="farel.png" alt="foto2">
                 <button onclick="toggleTable(this)">Show Table</button>
                     <table>
                         <tr>
@@ -116,14 +118,24 @@
                         
                         </tr>
                     </table>
+                    <a href="https://github.com/Farrel1707" class="button" target="_blank">Github</a>
                 </div>
     </div>
 
-    
-    <button onclick="shuffleImages()">Shuffle Images</button>
+    <button id="openPopup" class="button">Social Media</button>
+            <div id="popup" class="popup">
+                <span class="close" id="closePopup">&times;</span>
+                <p>Instagram: 
+                    <a href="https://www.instagram.com/sleep_is_f_good?igsh=MWtpdWVha24zOW00OA==" target="_blank">@sleep_is_f_good</a>,
+                    <a href="https://www.instagram.com/shelanofarrel?igsh=MW1ycXZpN2hvZ292ZQ==" target="_blank">@shelanofarrel</a>,
+                    <a href="https://www.instagram.com/dyorkxii/" target="_blank">@dyorkxii</a>
+                </p>
+                <p>Whatsapp: +62-898-3181-563, +62 895-2465-5046, +62 812-3801-6907</p>
+            </div>
+    <button onclick="shuffleImages()" class="button">Shuffle Images</button>
         
     <br>
-    <a href="https://github.com/AmbaTronV12" class="button">Github</a>
+    
     
     <script src="java.js"></script>
 </body>

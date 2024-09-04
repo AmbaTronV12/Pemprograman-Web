@@ -1,3 +1,8 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
 .row{
     display: flex;
     flex-direction: row;
@@ -12,6 +17,14 @@ body{
     background-image: url(background.png);
     background-size: cover;
 }
+
+.header{
+    color: white;
+    background-color: orange;
+    width: 100%;
+    text-align: center;
+}
+
 a.button {
     padding: 1px 6px;
     border: 1px outset buttonborder;
@@ -93,3 +106,5 @@ img{
     top: 10px; /* Adjust top position */
     right: 20px; /* Adjust right position */
 }
+
+
